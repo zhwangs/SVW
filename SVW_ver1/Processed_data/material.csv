@@ -1,0 +1,9 @@
+material_name,material_file,notes,material_id,EPS,MU
+Au,./Au_data_SCUFF,,Au,,
+SiO2,./SiO2_data_SCUFF,,SiO2,,
+SiN,./SiN_data_SCUFF,,SiN,,
+vacuum,,,vacuum,1.0,1.0
+water,,,water_const_eps_1.8,1.8,1.0
+vacuum,,,vac,1.0,1.0
+vacuum,,,vacc,1.0,1.0
+vacuum,,,Vac,1.0,1.0
