@@ -7,3 +7,6 @@ git status
 git add
 git commit
 ```
+```math
+\sqrt{2}
+```
