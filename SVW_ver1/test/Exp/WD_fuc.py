@@ -21,24 +21,15 @@ pip install pypandoc
 # general ------------------------------------------------------------
 import numpy as np
 import scipy as sp
-import h5py
-import re
-import time
-import datetime
+
 import os
 import pathlib
-from numpy.polynomial.legendre import legval, legder
-from scipy.special import lpmv, lpmn, clpmn, jv, jvp, yv, yvp, hankel1, hankel2, h1vp, h2vp, factorial, sph_harm
 import sys
 import pandas as pd
 
-from pathlib import Path
 
-import json
-
-import runpy
 import torch
-from time import strftime,time
+
 from scipy.special import spherical_jn, spherical_yn
 
 # plotting -------------------------------------------------------------
