@@ -16,7 +16,7 @@ sys.path.append(path_to_src)  # I could have used sys.path.append('../src/'), bu
 from WD_fuc import * 
 
 
-rad_test=100#2000
+rad_test=70#2000
 
 
 
@@ -118,9 +118,12 @@ k=Omega/c#2*pi/span
 x=Rec[0,:] 
 y=Rec[1,:] 
 z=Rec[2,:] 
-kk=0.01
-K=kk*np.array([1,0,1])
-lbd=2*np.pi/kk
+kk=0.1
+K=kk*np.array([1,0,0])
+K_mag=np.sqrt(np.sum(K**2))
+unit_K=K/K_mag
+
+lbd=2*np.pi/K_mag
 K2=plane_wave_dir(polar_psi,polar_chi,E0,K)
 #RR=angle_from_ek(k)
 KKK=plane_wave_dir(polar_psi,polar_chi,E0,K,direction=True)
@@ -171,7 +174,7 @@ fig.colorbar(mappable, shrink=0.2, aspect=5,label='Field Strength E_i')
 
 #ax.quiver(x_r, y_r, z_r, E_x_r.real, E_y_r.real, E_z_r.real, length=0.1*x.max(),linewidths=0.6*x.max())
 
-ax.set_title('Plane_wave.  \n Polar'+str(K2), fontsize=30)
+ax.set_title('Plane_wave Generation E_y \n Polar: '+str(K2)+'\n Direction: '+str(unit_K)+'\n Wavelength: '+str(round(lbd,2))+'meter(m)'+'\n ratio: wavelength/radius= '+str(round(lbd/radius.max(),2)), fontsize=30)
 ax.set_xlabel('x (meter)', fontsize=20)
 ax.set_ylabel('y (meter)', fontsize=20)
 ax.set_zlabel('z (meter)', fontsize=20)
