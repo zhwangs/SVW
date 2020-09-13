@@ -2,11 +2,6 @@
 
 ## Plane Wave generation plane wave can be generated with any direction and polarization. 
 
-```
-git status
-git add
-git commit
-```
-```math
-\sqrt{2}
-```
+
+
+![GitHub Logo](/images/logo.png)
