@@ -11,7 +11,7 @@ The following script contains all functions that are used in plane wave reconstr
 ### General functions
 The following functions are general conversion functions.
 
-#### <li> nth_derivative(f, wrt, n)
+#### <li> ```nth_derivative(f, wrt, n) ```
 Taking n'th derivative for a flatten torch tensor </li>
 
 #### <li> unit2cart(nu,phi,detach=True) -> (r_hat, nu_hat, phi_hat)
