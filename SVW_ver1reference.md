@@ -8,5 +8,5 @@ git add
 git commit
 ```
 ```math
-SE = \frac{\sigma}{\sqrt{n}}
+$`\sqrt{2}`$
 ```
